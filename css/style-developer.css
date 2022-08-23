@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.btn-bg{
+  width: 80px;
+  height: 30px;
+  background-image: url(../img/light-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 2px 2px 0px 2px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.btn-bg > .btn-for{
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/sun-btn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.btn-bg.active{
+  background-image: url(../img/dark-bg.png);
+}
+.btn-bg.active > .btn-for{
+  transform: translateX(50px);
+  background-image: url(../img/moon-btn.png);
+}
